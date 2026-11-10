@@ -1,0 +1,3232 @@
+/* =========================================================
+   HOME | GERAL
+========================================================= */
+
+.home-body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    font-family: "Inter", sans-serif;
+    background:
+        radial-gradient(
+            circle at 92% 35%,
+            rgba(19, 184, 91, 0.08),
+            transparent 25%
+        ),
+        #09121c;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   HOME | HEADER
+========================================================= */
+
+.home-header {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 0 11.8%;
+    box-sizing: border-box;
+    background: #101b26;
+    border-bottom: 1px solid #263442;
+    position: relative;
+    z-index: 10;
+}
+
+
+.home-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 140px;
+}
+
+
+.home-logo img {
+    width: 138px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   HOME | NAVEGAÇÃO
+========================================================= */
+
+.home-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 31px;
+
+    margin-left: auto;
+}
+
+
+.home-nav a {
+    color: #f2f5f7;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.home-nav a:hover {
+    color: #18bd5d;
+}
+
+
+/* =========================================================
+   HOME | AÇÕES DO HEADER
+========================================================= */
+
+.home-header-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-left: 30px;
+}
+
+
+/* =========================================================
+   HOME | TEMA
+========================================================= */
+
+.home-theme {
+    display: flex;
+    align-items: center;
+
+    padding: 3px;
+
+    border: 1px solid #293746;
+    border-radius: 11px;
+
+    background: #101a25;
+}
+
+
+.home-theme-option {
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0 11px;
+
+    border: 0;
+    border-radius: 8px;
+
+    background: transparent;
+    color: #aab6c2;
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.home-theme-dark {
+    background: #263544;
+    color: #ffffff;
+}
+
+
+.home-theme-option ion-icon {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   HOME | FAVORITOS
+========================================================= */
+
+.home-favorite {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f3f6f8;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+
+.home-favorite ion-icon {
+    font-size: 23px;
+}
+
+
+.home-favorite:hover {
+    color: #18bd5d;
+    background: #172431;
+}
+
+
+/* =========================================================
+   HOME | LOGIN
+========================================================= */
+
+.home-login {
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 0 19px;
+
+    border: 1px solid #2b3b4c;
+    border-radius: 10px;
+
+    color: #ffffff;
+
+    background: #14202c;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+
+.home-login ion-icon {
+    font-size: 18px;
+}
+
+
+.home-login:hover {
+    border-color: #16b858;
+    background: #172b24;
+}
+
+
+/* =========================================================
+   HOME | MAIN
+========================================================= */
+
+.home-main {
+    width: 100%;
+}
+
+
+/* =========================================================
+   HOME | HERO
+========================================================= */
+
+.home-hero {
+    width: 100%;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 11.8% 80px;
+    box-sizing: border-box;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+.home-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    right: -130px;
+    top: -200px;
+
+    border: 1px solid rgba(22, 190, 91, 0.15);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.home-hero-content {
+    width: 58%;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   HOME | LABEL
+========================================================= */
+
+.home-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 0 23px;
+
+    color: #18c463;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.home-label span {
+    width: 22px;
+    height: 2px;
+
+    display: inline-block;
+
+    background: #18c463;
+}
+
+
+/* =========================================================
+   HOME | TÍTULO
+========================================================= */
+
+.home-title {
+    margin: 0;
+
+    max-width: 680px;
+
+    color: #f7f9fb;
+
+    font-size: clamp(48px, 4.25vw, 68px);
+    line-height: 1.03;
+
+    font-weight: 400;
+    letter-spacing: -3px;
+}
+
+
+.home-title strong {
+    color: #17bd59;
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   HOME | DESCRIÇÃO
+========================================================= */
+
+.home-description {
+    max-width: 650px;
+
+    margin: 27px 0 31px;
+
+    color: #ffffff;
+
+    font-size: 18px;
+    line-height: 1.65;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   HOME | BUSCA
+========================================================= */
+
+.home-search {
+    width: min(638px, 100%);
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8px 0 22px;
+    box-sizing: border-box;
+
+    border: 1px solid #2a3a4b;
+    border-radius: 14px;
+
+    background: #101c28;
+
+    transition: 0.2s ease;
+}
+
+
+.home-search:focus-within {
+    border-color: #16bd5b;
+    box-shadow: 0 0 0 3px rgba(22, 189, 91, 0.08);
+}
+
+
+.home-search-icon {
+    display: flex;
+    align-items: center;
+
+    color: #10bc58;
+
+    font-size: 23px;
+}
+
+
+.home-search input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 100%;
+
+    padding: 0 15px;
+
+    border: 0;
+    outline: none;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+.home-search input::placeholder {
+    color: #8ca0b3;
+}
+
+
+.home-search button {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 0 21px;
+    border: 0;
+    border-radius: 10px;
+    background: #13b956;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 7px 20px rgba(22, 163, 74, .18);
+}
+
+
+.home-search button:hover {
+    background: #0fa64b;
+    transform: translateY(-1px);
+}
+
+
+.home-search button ion-icon {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   HOME | BENEFÍCIOS
+========================================================= */
+
+.home-benefits {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    margin-top: 21px;
+}
+
+
+.home-benefits p {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin: 0;
+
+    color: #9eb0c1;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.home-benefits ion-icon {
+    color: #0fc05a;
+
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   HOME | IMAGEM DO PRODUTO
+========================================================= */
+
+.home-product {
+    width: 472px;
+    height: 480px;
+
+    margin: 0 0 0 auto;
+
+    position: relative;
+
+    border-radius: 25px;
+
+    overflow: visible;
+}
+
+
+.home-product > img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    filter: grayscale(25%);
+}
+
+
+/* =========================================================
+   HOME | CARD DE ECONOMIA
+========================================================= */
+
+.home-saving-card {
+    width: 210px;
+
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    position: absolute;
+
+    top: 28px;
+    right: -25px;
+
+    padding: 17px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #293b4b;
+    border-radius: 13px;
+
+    background: #111e2a;
+
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+}
+
+
+.home-saving-icon {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(13, 180, 81, 0.18);
+    color: #10bd56;
+}
+
+
+.home-saving-icon ion-icon {
+    font-size: 17px;
+}
+
+
+.home-saving-card section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.home-saving-card strong {
+    color: #e7edf2;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.home-saving-card small {
+    color: #a5b3bf;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   HOME | CARD DE PREÇO
+========================================================= */
+
+.home-price-card {
+    width: 152px;
+
+    position: absolute;
+
+    left: -40px;
+    bottom: 39px;
+
+    padding: 18px 20px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #2b3b4b;
+    border-radius: 14px;
+
+    background: #101d29;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+.home-price-card small {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #8d9daa;
+
+    font-size: 10px;
+}
+
+
+.home-price-card strong {
+    display: block;
+
+    color: #f2f5f7;
+
+    font-size: 24px;
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+
+.home-price-card span {
+    display: block;
+
+    margin-top: 8px;
+
+    color: #b4c0ca;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   HOME | ACESSIBILIDADE
+========================================================= */
+
+.home-accessibility {
+    position: fixed;
+
+    left: 18px;
+    bottom: 12px;
+
+    z-index: 30;
+}
+
+
+.home-accessibility button {
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 18px;
+
+    border: 0;
+    border-radius: 11px;
+
+    background: #109f4c;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.home-accessibility ion-icon {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   HOME | AJUDA
+========================================================= */
+
+.home-help {
+    position: fixed;
+
+    right: 0;
+    bottom: 12px;
+
+    z-index: 30;
+}
+
+
+.home-help button {
+    min-width: 172px;
+    height: 49px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 0 18px;
+
+    border: 0;
+    border-radius: 13px 0 0 13px;
+
+    background: #f5f7fa;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.home-help ion-icon {
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+
+/* =========================================================
+   HOME | MENU MOBILE
+========================================================= */
+
+.home-mobile-menu {
+    display: none;
+
+    width: 42px;
+    height: 42px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+
+    border: 1px solid #2a3a49;
+    border-radius: 9px;
+
+    background: #14202b;
+    color: #ffffff;
+
+    font-size: 23px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   HOME | MODO CLARO
+========================================================= */
+
+/* =========================================================
+   HOME | MODO CLARO
+   ========================================================= */
+
+body.home-light-mode {
+    background: #ffffff;
+    color: #101a2e;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body.home-light-mode .home-header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5eaf0;
+}
+
+body.home-light-mode .home-nav a {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-nav a:hover {
+    color: #16a34a;
+}
+
+body.home-light-mode .home-login {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-mobile-menu {
+    background: #ffffff;
+    color: #101a2e;
+    border-color: #dce3ea;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+body.home-light-mode .home-hero {
+    background: #ffffff;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-hero h1 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-hero p {
+    color: #58708c;
+}
+
+body.home-light-mode .home-hero strong,
+body.home-light-mode .home-hero .home-destaque {
+    color: #16a34a;
+}
+
+
+/* =========================================================
+   BUSCA
+   ========================================================= */
+
+body.home-light-mode .home-search {
+    background: #ffffff;
+    border: 1px solid #dce4ec;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+body.home-light-mode .home-search input {
+    background: transparent;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-search input::placeholder {
+    color: #9aa9ba;
+}
+
+body.home-light-mode .home-search button {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+body.home-light-mode .home-search button:hover {
+    background: #12813b;
+}
+
+
+/* =========================================================
+   MEDICAMENTOS EM DESTAQUE
+   ========================================================= */
+
+body.home-light-mode .home-destaques {
+    background: #ffffff;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-destaques h2 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-destaques-header {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-destaques a {
+    color: #087f3d;
+}
+
+
+/* =========================================================
+   CARDS DE MEDICAMENTOS
+   ========================================================= */
+
+body.home-light-mode .home-medicamento-card {
+    background: #ffffff;
+    border: 1px solid #dce4ec;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-medicamento-card:hover {
+    border-color: #b8c8d8;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
+}
+
+body.home-light-mode .home-medicamento-imagem {
+    background: #f1f5f9;
+}
+
+body.home-light-mode .home-medicamento-card h3 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-medicamento-card p,
+body.home-light-mode .home-medicamento-card small {
+    color: #58708c;
+}
+
+body.home-light-mode .home-medicamento-preco {
+    color: #087f3d;
+}
+
+body.home-light-mode .home-medicamento-comparar {
+    background: #ffffff;
+    color: #101a2e;
+    border: 1px solid #dce4ec;
+}
+
+body.home-light-mode .home-medicamento-comparar:hover {
+    background: #f4f8fb;
+    border-color: #b8c8d8;
+}
+
+
+/* =========================================================
+   CATEGORIAS
+   ========================================================= */
+
+body.home-light-mode .home-categorias {
+    background: #f7f9fb;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-categorias-header h2 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-categoria {
+    background: #ffffff;
+    border: 1px solid #dce4ec;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-categoria:hover {
+    border-color: #b8c8d8;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+body.home-light-mode .home-categoria-icone {
+    background: #edfaf2;
+    color: #16a34a;
+}
+
+body.home-light-mode .home-categoria h3 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-categoria-info small {
+    color: #58708c;
+}
+
+
+/* =========================================================
+   COMO FUNCIONA
+   ========================================================= */
+
+body.home-light-mode .home-como-funciona {
+    background: #ffffff;
+    color: #101a2e;
+}
+
+body.home-light-mode .home-como-texto h2 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-como-texto p {
+    color: #58708c;
+}
+
+body.home-light-mode .home-como-item {
+    border-top: 1px solid #dce4ec;
+}
+
+body.home-light-mode .home-como-item:last-child {
+    border-bottom: 1px solid #dce4ec;
+}
+
+body.home-light-mode .home-como-item h3 {
+    color: #101a2e;
+}
+
+body.home-light-mode .home-como-item p {
+    color: #58708c;
+}
+
+body.home-light-mode .home-como-numero {
+    color: #16a34a;
+}
+
+body.home-light-mode .home-como-botao {
+    background: #101a2e;
+    color: #ffffff;
+}
+
+body.home-light-mode .home-como-botao:hover {
+    background: #17243a;
+}
+
+
+/* =========================================================
+   CTA VERDE
+   ========================================================= */
+
+body.home-light-mode .home-cta {
+    background: #137b38;
+    color: #ffffff;
+}
+
+body.home-light-mode .home-cta h2 {
+    color: #ffffff;
+}
+
+body.home-light-mode .home-cta p {
+    color: #ffffff;
+}
+
+body.home-light-mode .home-cta-botao {
+    background: #101a2e;
+    color: #ffffff;
+    border: none;
+}
+
+body.home-light-mode .home-cta-botao:hover {
+    background: #17243a;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.home-light-mode .home-footer {
+    background: #0d1628;
+    color: #ffffff;
+}
+
+body.home-light-mode .home-footer h3 {
+    color: #ffffff;
+}
+
+body.home-light-mode .home-footer p {
+    color: #9aabc0;
+}
+
+body.home-light-mode .home-footer a {
+    color: #d7e0ea;
+}
+
+body.home-light-mode .home-footer a:hover {
+    color: #2ee981;
+}
+
+body.home-light-mode .home-footer-bottom {
+    border-top: 1px solid #29364a;
+}
+
+body.home-light-mode .home-footer-bottom p {
+    color: #71839b;
+}
+
+
+
+/* =========================================================
+   ACESSIBILIDADE
+   ========================================================= */
+
+body.home-light-mode .home-acessibilidade {
+    background: #138b43;
+    color: #ffffff;
+}
+
+/* =========================================================
+   HOME | RESPONSIVO
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .home-header {
+        padding: 0 6%;
+    }
+
+    .home-hero {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .home-product {
+        width: 410px;
+        height: 440px;
+    }
+
+    .home-title {
+        font-size: 53px;
+    }
+
+}
+
+
+/* =========================================================
+   HOME | TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .home-header {
+        padding: 0 30px;
+    }
+
+    .home-nav {
+        gap: 17px;
+    }
+
+    .home-header-actions {
+        margin-left: 15px;
+    }
+
+    .home-theme {
+        display: none;
+    }
+
+    .home-hero {
+        gap: 30px;
+
+        padding: 60px 30px;
+    }
+
+    .home-hero-content {
+        width: 55%;
+    }
+
+    .home-title {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .home-description {
+        font-size: 16px;
+    }
+
+    .home-product {
+        width: 360px;
+        height: 410px;
+    }
+
+    .home-saving-card {
+        right: -15px;
+    }
+
+}
+
+
+/* =========================================================
+   HOME | MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .home-header {
+        height: 68px;
+
+        padding: 0 20px;
+    }
+
+
+    .home-logo {
+        width: 125px;
+    }
+
+
+    .home-logo img {
+        width: 125px;
+    }
+
+
+    .home-nav {
+        display: none;
+
+        position: absolute;
+
+        top: 68px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 18px 20px;
+
+        box-sizing: border-box;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+
+        background: #101b26;
+        border-bottom: 1px solid #293746;
+    }
+
+
+    .home-nav.home-nav-active {
+        display: flex;
+    }
+
+
+    .home-header-actions {
+        display: none;
+    }
+
+
+    .home-header-actions.home-actions-active {
+        display: flex;
+
+        position: absolute;
+
+        top: 275px;
+        left: 20px;
+
+        margin: 0;
+    }
+
+
+    .home-mobile-menu {
+        display: flex;
+    }
+
+
+    .home-hero {
+        min-height: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 55px 20px 90px;
+    }
+
+
+    .home-hero-content {
+        width: 100%;
+    }
+
+
+    .home-label {
+        font-size: 10px;
+    }
+
+
+    .home-title {
+        font-size: clamp(40px, 11vw, 54px);
+        line-height: 1.04;
+
+        letter-spacing: -2px;
+    }
+
+
+    .home-description {
+        margin-top: 22px;
+
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    .home-search {
+        height: auto;
+        min-height: 60px;
+
+        padding: 7px;
+    }
+
+
+    .home-search input {
+        width: 100%;
+
+        padding: 0 8px;
+
+        font-size: 12px;
+    }
+
+
+    .home-search button {
+        height: 46px;
+
+        padding: 0 13px;
+
+        font-size: 11px;
+    }
+
+
+    .home-search button ion-icon {
+        display: none;
+    }
+
+
+    .home-benefits {
+        flex-wrap: wrap;
+
+        gap: 12px 18px;
+
+        margin-top: 20px;
+    }
+
+
+    .home-benefits p {
+        font-size: 10px;
+    }
+
+
+    .home-product {
+        width: calc(100% - 30px);
+        height: 350px;
+
+        margin: 60px auto 0;
+    }
+
+
+    .home-saving-card {
+        top: 18px;
+        right: -15px;
+
+        width: 190px;
+    }
+
+
+    .home-price-card {
+        left: -15px;
+        bottom: 25px;
+    }
+
+
+    .home-accessibility {
+        left: 10px;
+        bottom: 10px;
+    }
+
+
+    .home-accessibility button {
+        width: 45px;
+        height: 45px;
+
+        padding: 0;
+
+        justify-content: center;
+    }
+
+
+    .home-accessibility button span {
+        display: none;
+    }
+
+
+    .home-help button {
+        min-width: 50px;
+        width: 50px;
+
+        justify-content: center;
+
+        padding: 0;
+
+        border-radius: 12px 0 0 12px;
+    }
+
+
+    .home-help button span {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   HOME | MOBILE PEQUENO
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .home-title {
+        font-size: 39px;
+    }
+
+
+    .home-description {
+        font-size: 14px;
+    }
+
+
+    .home-search {
+        display: grid;
+
+        grid-template-columns: 28px 1fr;
+        grid-template-rows: 52px 46px;
+
+        padding: 5px;
+    }
+
+
+    .home-search-icon {
+        justify-content: center;
+    }
+
+
+    .home-search input {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    .home-search button {
+        grid-column: 1 / 3;
+        grid-row: 2;
+
+        width: 100%;
+    }
+
+
+    .home-product {
+        height: 300px;
+    }
+
+
+    .home-saving-card {
+        transform: scale(0.88);
+        transform-origin: right top;
+    }
+
+}
+
+/* ================= MEDICAMENTOS EM DESTAQUE ================= */
+
+.home-destaques {
+    width: 100%;
+    padding: 70px 0 80px;
+    background: #091019;
+}
+
+.home-destaques-header {
+    width: min(1180px, 92%);
+    margin: 0 auto 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.home-destaques-label {
+    display: block;
+    margin-bottom: 18px;
+    color: #28e77d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.home-destaques-header h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.home-destaques-ver-todos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #32e980;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.home-destaques-ver-todos:hover {
+    opacity: 0.75;
+}
+
+.home-destaques-ver-todos ion-icon {
+    font-size: 18px;
+}
+
+.home-destaques-lista {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.home-medicamento-card {
+    overflow: hidden;
+    background: #101b27;
+    border: 1px solid #263747;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+.home-medicamento-card:hover {
+    transform: translateY(-4px);
+    border-color: #31506a;
+}
+
+.home-medicamento-topo {
+    height: 58px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-medicamento-tag {
+    padding: 7px 11px;
+    border-radius: 20px;
+    background: #0b482c;
+    color: #35ee85;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.home-medicamento-favorito {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #304252;
+    border-radius: 50%;
+    background: #12202d;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.home-medicamento-favorito:hover {
+    background: #0c5131;
+    border-color: #1fd873;
+    color: #31e982;
+}
+
+.home-medicamento-favorito ion-icon {
+    font-size: 19px;
+}
+
+.home-medicamento-card:first-child .home-medicamento-favorito {
+    background: #0b482c;
+    border-color: #0d613b;
+    color: #20e477;
+}
+
+.home-medicamento-imagem {
+    height: 123px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e1823;
+}
+
+.home-medicamento-imagem ion-icon {
+    color: #ffffff;
+    font-size: 42px;
+}
+
+.home-medicamento-info {
+    padding: 24px 21px 21px;
+}
+
+.home-medicamento-tipo {
+    display: block;
+    margin-bottom: 11px;
+    color: #2de87f;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.home-medicamento-info h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home-medicamento-info p {
+    margin: 9px 0 23px;
+    color: #d8e3ed;
+    font-size: 13px;
+}
+
+.home-medicamento-info small {
+    display: block;
+    margin-bottom: 4px;
+    color: #d4dce4;
+    font-size: 10px;
+}
+
+.home-medicamento-preco {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.home-medicamento-preco strong {
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.home-medicamento-preco aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.home-medicamento-preco del {
+    color: #7c8791;
+    font-size: 10px;
+}
+
+.home-medicamento-preco span {
+    margin-top: 3px;
+    color: #39ed88;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.home-medicamento-comparar {
+    height: 46px;
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #293b4c;
+    border-radius: 9px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.home-medicamento-comparar:hover {
+    background: #162838;
+    border-color: #3a5267;
+}
+
+.home-medicamento-comparar ion-icon {
+    font-size: 17px;
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 850px) {
+
+    .home-destaques {
+        padding: 55px 0;
+    }
+
+    .home-destaques-header {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .home-destaques-header h2 {
+        font-size: 29px;
+    }
+
+    .home-destaques-lista {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-destaques-header {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .home-destaques-header h2 {
+        font-size: 27px;
+    }
+
+    .home-destaques-ver-todos {
+        align-self: flex-start;
+    }
+
+    .home-destaques-lista {
+        width: 90%;
+    }
+
+}
+
+/* ================= CATEGORIAS ================= */
+
+.home-categorias {
+    width: 100%;
+    padding: 85px 0 100px;
+    background: #091019;
+}
+
+.home-categorias-header {
+    width: min(1030px, 92%);
+    margin: 0 auto 35px;
+}
+
+.home-categorias-label {
+    display: block;
+    margin-bottom: 17px;
+    color: #2ee981;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.home-categorias-header h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.home-categorias-lista {
+    width: min(1030px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.home-categoria-card {
+    min-height: 95px;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border: 1px solid #293b4b;
+    border-radius: 11px;
+    background: #101b27;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.home-categoria-card:hover {
+    border-color: #31516a;
+    transform: translateY(-3px);
+}
+
+.home-categoria-icone {
+    width: 41px;
+    height: 41px;
+    min-width: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #083a24;
+    color: #24db75;
+}
+
+.home-categoria-icone ion-icon {
+    font-size: 19px;
+}
+
+.home-categoria-info {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-categoria-info strong {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.home-categoria-info small {
+    margin-top: 6px;
+    color: #d0dbe5;
+    font-size: 10px;
+    white-space: nowrap;
+}
+
+.home-categoria-seta {
+    color: #8493a1;
+    font-size: 16px;
+}
+
+
+/* ================= COMO FUNCIONA ================= */
+
+.home-como-funciona {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 60px max(calc((100% - 1030px) / 2), 4%) 90px;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 70px;
+    background: #091019;
+}
+
+.home-como-texto {
+    padding-top: 28px;
+}
+
+.home-como-label {
+    display: block;
+    margin-bottom: 16px;
+    color: #2ee981;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.home-como-texto h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 37px;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.home-como-texto p {
+    max-width: 440px;
+    margin: 20px 0 26px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.home-como-botao {
+    min-height: 43px;
+    padding: 0 19px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 8px;
+    background: #e5edf6;
+    color: #12202c;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.home-como-lista {
+    width: 100%;
+}
+
+.home-como-item {
+    min-height: 98px;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 0;
+    border-top: 1px solid #293a49;
+}
+
+.home-como-item:last-child {
+    border-bottom: 1px solid #293a49;
+}
+
+.home-como-numero {
+    color: #22d873;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.home-como-item h3 {
+    margin: 4px 0 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.home-como-item p {
+    margin: 10px 0 0;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    /* ================= CATEGORIAS ================= */
+
+    .home-categorias {
+        padding: 65px 0 75px;
+    }
+
+    .home-categorias-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ================= COMO FUNCIONA ================= */
+
+    .home-como-funciona {
+        width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding: 55px 6% 75px;
+    }
+
+    .home-como-texto {
+        padding-top: 0;
+    }
+
+    .home-como-texto h2 {
+        font-size: 34px;
+    }
+
+    .home-como-texto p {
+        max-width: 500px;
+    }
+
+    .home-como-lista {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    /* ================= CATEGORIAS ================= */
+
+    .home-categorias {
+        padding: 55px 0 65px;
+    }
+
+    .home-categorias-header {
+        width: 90%;
+    }
+
+    .home-categorias-header h2 {
+        font-size: 28px;
+    }
+
+    .home-categorias-lista {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .home-categoria-info small {
+        white-space: normal;
+    }
+
+
+    /* ================= COMO FUNCIONA ================= */
+
+    .home-como-funciona {
+        width: 100%;
+        padding: 45px 7% 60px;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .home-como-texto h2 {
+        font-size: 29px;
+        line-height: 1.15;
+    }
+
+    .home-como-texto p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .home-como-botao {
+        min-height: 44px;
+    }
+
+    .home-como-item {
+        min-height: auto;
+        padding: 22px 0;
+        grid-template-columns: 35px 1fr;
+    }
+
+    .home-como-item h3 {
+        font-size: 15px;
+    }
+
+    .home-como-item p {
+        font-size: 11px;
+    }
+
+
+    /* ================= CTA ================= */
+
+    .home-cta {
+        width: 90%;
+        margin: 20px auto 60px;
+        padding: 32px 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-cta h2 {
+        font-size: 26px;
+    }
+
+    .home-cta p {
+        line-height: 1.5;
+    }
+
+    .home-cta-botao {
+        width: 100%;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .home-footer-conteudo {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .home-footer-bottom {
+        width: 90%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+}
+
+/* ================= CTA FINAL ================= */
+
+.home-cta {
+    position: relative;
+    width: min(1060px, 92%);
+    min-height: 235px;
+    margin: 35px auto 80px;
+    padding: 45px 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    overflow: hidden;
+    border-radius: 17px;
+    background: #126d35;
+}
+
+.home-cta::after {
+    content: "";
+    position: absolute;
+    width: 235px;
+    height: 235px;
+    right: 120px;
+    top: -115px;
+    border: 22px solid rgba(56, 211, 113, 0.16);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.home-cta-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.home-cta-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 19px;
+    color: #37e985;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+}
+
+.home-cta-label i {
+    width: 20px;
+    height: 2px;
+    display: block;
+    background: #c5e5d0;
+}
+
+.home-cta h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.home-cta p {
+    margin: 13px 0 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.home-cta-botao {
+    position: relative;
+    z-index: 2;
+    min-width: 170px;
+    height: 42px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 9px;
+    background: #152638;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.home-cta-botao:hover {
+    background: #1c3449;
+}
+
+.home-cta-botao ion-icon {
+    font-size: 16px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.home-footer {
+    width: 100%;
+    padding: 60px 0 20px;
+    background: #060c12;
+}
+
+.home-footer-conteudo {
+    width: min(1060px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.25fr;
+    gap: 55px;
+}
+
+.home-footer-marca {
+    max-width: 310px;
+}
+
+.home-footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.home-footer-logo-icone {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #0cab4e;
+}
+
+.home-footer-logo-icone ion-icon {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.home-footer-logo strong {
+    color: #25d873;
+    font-size: 11px;
+}
+
+.home-footer-marca p {
+    margin-top: 14px;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.home-footer-coluna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home-footer-coluna h3 {
+    margin: 3px 0 19px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.home-footer-coluna a {
+    margin-bottom: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    transition: 0.2s;
+}
+
+.home-footer-coluna a:hover {
+    color: #2de77f;
+}
+
+.home-footer-importante p {
+    max-width: 210px;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.55;
+}
+
+.home-footer-bottom {
+    width: min(1060px, 92%);
+    margin: 40px auto 0;
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #263442;
+}
+
+.home-footer-bottom span {
+    color: #66798b;
+    font-size: 9px;
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 850px) {
+
+    .home-cta {
+        padding: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-cta h2 {
+        font-size: 29px;
+    }
+
+    .home-cta-botao {
+        min-width: 180px;
+    }
+
+    .home-footer-conteudo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .home-cta {
+        width: 90%;
+        margin-top: 20px;
+        padding: 32px 25px;
+    }
+
+    .home-cta h2 {
+        font-size: 25px;
+    }
+
+    .home-cta p {
+        line-height: 1.5;
+    }
+
+    .home-footer {
+        padding-top: 45px;
+    }
+
+    .home-footer-conteudo {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .home-footer-bottom {
+        width: 90%;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+}
+
+/* =========================================================
+   LOGIN ADM | GERAL
+========================================================= */
+
+.login-adm-body {
+    margin: 0;
+    padding: 0;
+
+    min-height: 100vh;
+
+    font-family: "Inter", sans-serif;
+
+    background: #0b151f;
+
+    color: #ffffff;
+}
+
+
+.login-adm-body * {
+    box-sizing: border-box;
+}
+
+
+.login-adm-main {
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 44% 56%;
+}
+
+
+/* =========================================================
+   LOGIN ADM | LADO ESQUERDO
+========================================================= */
+
+.login-adm-brand {
+    min-height: 100vh;
+
+    position: relative;
+
+    margin: 15px 0 15px 14px;
+
+    padding: 52px 60px;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background:
+        radial-gradient(
+            circle at 95% 0%,
+            rgba(51, 205, 111, 0.13),
+            transparent 24%
+        ),
+        linear-gradient(
+            135deg,
+            #0c5a32,
+            #087936 55%,
+            #087d39
+        );
+}
+
+
+/* =========================================================
+   LOGIN ADM | LOGO
+========================================================= */
+
+.login-adm-logo {
+    position: relative;
+    z-index: 3;
+
+    display: inline-flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+.login-adm-logo img {
+    width: 132px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   LOGIN ADM | CONTEÚDO DA MARCA
+========================================================= */
+
+.login-adm-brand-content {
+    position: absolute;
+
+    left: 60px;
+    top: 36%;
+
+    max-width: 520px;
+
+    z-index: 2;
+}
+
+
+.login-adm-brand-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin: 0 0 24px;
+
+    color: #27d66f;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.login-adm-brand-label span {
+    width: 23px;
+    height: 2px;
+
+    display: inline-block;
+
+    background: #27d66f;
+}
+
+
+.login-adm-brand-title {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 3.3vw, 58px);
+    line-height: 1.05;
+
+    font-weight: 400;
+
+    letter-spacing: -2.5px;
+}
+
+
+.login-adm-brand-description {
+    max-width: 470px;
+
+    margin: 23px 0 0;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   LOGIN ADM | SEGURANÇA
+========================================================= */
+
+.login-adm-security {
+    width: calc(100% - 120px);
+
+    position: absolute;
+
+    left: 60px;
+    bottom: 52px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 16px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(8px);
+
+    z-index: 3;
+}
+
+
+.login-adm-security-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    background: rgba(255, 255, 255, 0.13);
+
+    color: #ffffff;
+}
+
+
+.login-adm-security-icon ion-icon {
+    font-size: 21px;
+}
+
+
+.login-adm-security section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.login-adm-security strong {
+    font-size: 11px;
+    font-weight: 800;
+}
+
+
+.login-adm-security small {
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | DECORAÇÕES
+========================================================= */
+
+.login-adm-decoration {
+    position: absolute;
+
+    border: 1px solid rgba(92, 230, 137, 0.12);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+
+.login-adm-decoration-one {
+    width: 390px;
+    height: 390px;
+
+    top: -130px;
+    right: -130px;
+}
+
+
+.login-adm-decoration-two {
+    width: 270px;
+    height: 270px;
+
+    top: -75px;
+    right: -75px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | LADO DIREITO
+========================================================= */
+
+.login-adm-content {
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 70px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | TEMA
+========================================================= */
+
+.login-adm-theme {
+    position: absolute;
+
+    top: 23px;
+    right: 23px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 3px;
+
+    border: 1px solid #273746;
+    border-radius: 10px;
+
+    background: #0e1924;
+}
+
+
+.login-adm-theme button {
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 0 10px;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #9eacb8;
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+.login-adm-theme-dark {
+    background: #263545 !important;
+
+    color: #ffffff !important;
+}
+
+
+.login-adm-theme ion-icon {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | VOLTAR
+========================================================= */
+
+.login-adm-back {
+    position: absolute;
+
+    top: 147px;
+    left: 50%;
+
+    width: 410px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #d8e0e6;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.login-adm-back:hover {
+    color: #18c55e;
+}
+
+
+.login-adm-back ion-icon {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | CONTAINER DO FORMULÁRIO
+========================================================= */
+
+.login-adm-form-container {
+    width: 410px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | CABEÇALHO DO FORMULÁRIO
+========================================================= */
+
+.login-adm-form-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+
+    margin-bottom: 28px;
+}
+
+
+.login-adm-form-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+
+    border-radius: 12px;
+
+    background: rgba(8, 184, 79, 0.14);
+
+    color: #12bd59;
+}
+
+
+.login-adm-form-icon ion-icon {
+    font-size: 22px;
+}
+
+
+.login-adm-form-header section {
+    flex: 1;
+}
+
+
+.login-adm-form-label {
+    margin: 4px 0 9px;
+
+    color: #1bca61;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.login-adm-form-header h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 24px;
+    line-height: 1.15;
+
+    font-weight: 500;
+
+    letter-spacing: -0.8px;
+}
+
+
+.login-adm-form-description {
+    margin: 7px 0 0;
+
+    color: #a7b4bf;
+
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   LOGIN ADM | FORMULÁRIO
+========================================================= */
+
+.login-adm-form {
+    width: 100%;
+}
+
+
+.login-adm-label {
+    display: block;
+
+    margin: 0 0 7px;
+
+    color: #e5ebef;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+
+.login-adm-input {
+    width: 100%;
+    height: 46px;
+
+    display: block;
+
+    margin-bottom: 16px;
+
+    padding: 0 13px;
+
+    border: 1px solid #2a3a49;
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #101b26;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+
+.login-adm-input::placeholder {
+    color: #7890a3;
+}
+
+
+.login-adm-input:focus {
+    border-color: #15bd5a;
+
+    box-shadow: 0 0 0 3px rgba(21, 189, 90, 0.08);
+}
+
+
+/* =========================================================
+   LOGIN ADM | SENHA
+========================================================= */
+
+.login-adm-password {
+    position: relative;
+}
+
+
+.login-adm-password .login-adm-input {
+    padding-right: 45px;
+}
+
+
+.login-adm-password-button {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 45px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+
+    background: transparent;
+    color: #c2cbd2;
+
+    cursor: pointer;
+}
+
+
+.login-adm-password-button:hover {
+    color: #18c45c;
+}
+
+
+.login-adm-password-button ion-icon {
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | OPÇÕES
+========================================================= */
+
+.login-adm-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: -5px;
+    margin-bottom: 17px;
+}
+
+
+.login-adm-remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #c2ccd4;
+
+    font-size: 8px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.login-adm-remember input {
+    width: 13px;
+    height: 13px;
+
+    margin: 0;
+
+    accent-color: #13b957;
+
+    cursor: pointer;
+}
+
+
+.login-adm-recovery {
+    color: #e2e8ec;
+
+    font-size: 8px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.login-adm-recovery:hover {
+    color: #16bf5b;
+}
+
+
+/* =========================================================
+   LOGIN ADM | ERRO
+========================================================= */
+
+.login-adm-error {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    margin: 0 0 12px;
+
+    color: #ff7777;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+.login-adm-error ion-icon {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | BOTÃO
+========================================================= */
+
+.login-adm-submit {
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border: 0;
+    border-radius: 9px;
+
+    background: #13b957;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    cursor: pointer;
+
+    box-shadow: 0 8px 22px rgba(19, 185, 87, 0.16);
+
+    transition: 0.2s ease;
+}
+
+
+.login-adm-submit:hover {
+    background: #0fa94d;
+
+    transform: translateY(-1px);
+}
+
+
+.login-adm-submit ion-icon {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | DEMONSTRAÇÃO
+========================================================= */
+
+.login-adm-demo {
+    min-height: 67px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 19px;
+
+    padding: 11px 13px;
+
+    border: 1px dashed #2b3b4b;
+    border-radius: 9px;
+
+    background: rgba(9, 18, 28, 0.5);
+}
+
+
+.login-adm-demo section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+
+.login-adm-demo strong {
+    color: #ffffff;
+
+    font-size: 9px;
+    font-weight: 800;
+}
+
+
+.login-adm-demo p {
+    margin: 0;
+
+    color: #9baab5;
+
+    font-size: 8px;
+}
+
+
+.login-adm-fill {
+    border: 0;
+
+    background: transparent;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 8px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.login-adm-fill:hover {
+    color: #18c55e;
+}
+
+
+/* =========================================================
+   LOGIN ADM | AJUDA
+========================================================= */
+
+.login-adm-help {
+    max-width: 390px;
+
+    margin: 22px auto 0;
+
+    color: #95a5b1;
+
+    font-size: 8px;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   LOGIN ADM | ACESSIBILIDADE
+========================================================= */
+
+.login-adm-accessibility {
+    position: fixed;
+
+    left: 17px;
+    bottom: 13px;
+
+    z-index: 20;
+}
+
+
+.login-adm-accessibility button {
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 0 17px;
+
+    border: 0;
+    border-radius: 11px;
+
+    background: #109e4b;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+.login-adm-accessibility ion-icon {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   LOGIN ADM | RESPONSIVO
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .login-adm-main {
+        grid-template-columns: 1fr;
+    }
+
+
+    .login-adm-brand {
+        display: none;
+    }
+
+
+    .login-adm-content {
+        min-height: 100vh;
+
+        padding: 100px 30px 60px;
+    }
+
+
+    .login-adm-form-container {
+        margin-top: 20px;
+    }
+
+
+    .login-adm-back {
+        top: 105px;
+    }
+
+}
+
+
+/* =========================================================
+   LOGIN ADM | MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .login-adm-content {
+        padding: 90px 20px 70px;
+    }
+
+
+    .login-adm-theme {
+        top: 15px;
+        right: 15px;
+    }
+
+
+    .login-adm-back {
+        top: 85px;
+
+        width: calc(100% - 40px);
+    }
+
+
+    .login-adm-form-container {
+        width: 100%;
+    }
+
+
+    .login-adm-form-header h2 {
+        font-size: 21px;
+    }
+
+
+    .login-adm-form-description {
+        font-size: 9px;
+    }
+
+
+    .login-adm-demo {
+        align-items: flex-start;
+        flex-direction: column;
+
+        gap: 9px;
+    }
+
+
+    .login-adm-fill {
+        padding: 0;
+    }
+
+
+    .login-adm-accessibility {
+        left: 10px;
+        bottom: 10px;
+    }
+
+
+    .login-adm-accessibility button {
+        width: 45px;
+
+        padding: 0;
+
+        justify-content: center;
+    }
+
+
+    .login-adm-accessibility button span {
+        display: none;
+    }
+
+}

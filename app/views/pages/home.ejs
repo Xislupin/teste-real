@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link rel="stylesheet" href="/css/home.css">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+        <script src="/js/home.js" defer></script>
+
+    <title>BioClicky</title>
+
+</head>
+
+
+<body class="home-body">
+
+    <%- include("../partials/header") %>
+
+
+    <main class="home-main">
+
+        <section class="home-hero">
+
+            <section class="home-hero-content">
+
+                <p class="home-label">
+                    <span></span>
+                    COMPARE. ECONOMIZE. CUIDE-SE.
+                </p>
+
+
+                <h1 class="home-title">
+
+                    O melhor preço para<br>
+                    o seu medicamento,<br>
+
+                    <strong>
+                        perto de você.
+                    </strong>
+
+                </h1>
+
+
+                <p class="home-description">
+
+                    Compare preços em farmácias confiáveis e encontre
+                    a melhor opção em poucos segundos.
+
+                </p>
+
+
+                <form
+                    action="/remedios"
+                    method="GET"
+                    class="home-search"
+                    id="buscar"
+                >
+
+                    <label
+                        for="home-search-input"
+                        class="home-search-icon"
+                    >
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+
+
+                    <input
+                        type="search"
+                        id="home-search-input"
+                        name="busca"
+                        placeholder="Busque por medicamento, princípio ativo ou marca"
+                        autocomplete="off"
+                    >
+
+
+                    <button type="submit">
+
+                        Buscar preços
+
+                        <ion-icon
+                            name="arrow-forward-outline"
+                        ></ion-icon>
+
+                    </button>
+
+                </form>
+
+
+                <section class="home-benefits">
+
+                    <p>
+                        <ion-icon name="shield-check-outline"></ion-icon>
+                        Farmácias verificadas
+                    </p>
+
+                    <p>
+                        <ion-icon name="location-outline"></ion-icon>
+                        Preços na sua região
+                    </p>
+
+                    <p>
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                        Comparação transparente
+                    </p>
+
+                </section>
+
+            </section>
+
+
+            <figure class="home-product">
+
+                <img
+                    src="/imagens/home/home-fund.png"
+                    alt="Medicamento"
+                >
+
+
+                <figcaption class="home-saving-card">
+
+                    <span class="home-saving-icon">
+                        <ion-icon name="checkmark-outline"></ion-icon>
+                    </span>
+
+
+                    <section>
+
+                        <strong>
+                            42% de economia
+                        </strong>
+
+                        <small>
+                            comparado ao maior preço
+                        </small>
+
+                    </section>
+
+                </figcaption>
+
+
+                <aside class="home-price-card">
+
+                    <small>
+                        Melhor preço hoje
+                    </small>
+
+                    <strong>
+                        R$ 7,49
+                    </strong>
+
+                    <span>
+                        em farmácia a 1,2 km
+                    </span>
+
+                </aside>
+
+            </figure>
+
+        </section>
+
+    </main>
+
+
+    <aside class="home-accessibility">
+
+        <button type="button">
+
+            <ion-icon
+                name="accessibility-outline"
+            ></ion-icon>
+
+            <span>
+                Acessibilidade
+            </span>
+
+        </button>
+
+    </aside>
+
+
+    <aside class="home-help">
+
+        <button type="button">
+
+            <ion-icon
+                name="chatbox-ellipses-outline"
+            ></ion-icon>
+
+            <span>
+                Ajuda com remédios
+            </span>
+
+        </button>
+
+    </aside>
+
+<section class="home-destaques" id="medicamentos-destaque">
+
+    <header class="home-destaques-header">
+
+        <section>
+            <span class="home-destaques-label">ESCOLHAS INTELIGENTES</span>
+
+            <h2>Medicamentos em destaque</h2>
+        </section>
+
+        <a href="/remedios" class="home-destaques-ver-todos">
+            Ver todos
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+
+    </header>
+
+    <section class="home-destaques-lista">
+
+        <article class="home-medicamento-card">
+
+            <header class="home-medicamento-topo">
+
+                <span class="home-medicamento-tag">
+                    Mais buscado
+                </span>
+
+                <button class="home-medicamento-favorito" type="button">
+                    <ion-icon name="heart"></ion-icon>
+                </button>
+
+            </header>
+
+            <figure class="home-medicamento-imagem">
+                <ion-icon name="medical-outline"></ion-icon>
+            </figure>
+
+            <section class="home-medicamento-info">
+
+                <span class="home-medicamento-tipo">
+                    MEDICAMENTO GENÉRICO
+                </span>
+
+                <h3>Dipirona Monoidratada</h3>
+
+                <p>1g • 10 comprimidos</p>
+
+                <small>a partir de</small>
+
+                <section class="home-medicamento-preco">
+
+                    <strong>R$ 7,49</strong>
+
+                    <aside>
+                        <del>R$ 12,90</del>
+                        <span>economize 42%</span>
+                    </aside>
+
+                </section>
+
+                <a href="/remedio/1" class="home-medicamento-comparar">
+                    Comparar preços
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="home-medicamento-card">
+
+            <header class="home-medicamento-topo">
+
+                <span class="home-medicamento-tag">
+                    Menor preço
+                </span>
+
+                <button class="home-medicamento-favorito" type="button">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+
+            </header>
+
+            <figure class="home-medicamento-imagem">
+                <ion-icon name="medical-outline"></ion-icon>
+            </figure>
+
+            <section class="home-medicamento-info">
+
+                <span class="home-medicamento-tipo">
+                    MEDICAMENTO GENÉRICO
+                </span>
+
+                <h3>Losartana Potássica</h3>
+
+                <p>50mg • 30 comprimidos</p>
+
+                <small>a partir de</small>
+
+                <section class="home-medicamento-preco">
+
+                    <strong>R$ 9,89</strong>
+
+                    <aside>
+                        <del>R$ 16,40</del>
+                        <span>economize 40%</span>
+                    </aside>
+
+                </section>
+
+                <a href="/remedio/2" class="home-medicamento-comparar">
+                    Comparar preços
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+            </section>
+
+        </article>
+
+
+        <article class="home-medicamento-card">
+
+            <header class="home-medicamento-topo">
+
+                <span class="home-medicamento-tag">
+                    Em alta
+                </span>
+
+                <button class="home-medicamento-favorito" type="button">
+                    <ion-icon name="heart-outline"></ion-icon>
+                </button>
+
+            </header>
+
+            <figure class="home-medicamento-imagem">
+                <ion-icon name="medical-outline"></ion-icon>
+            </figure>
+
+            <section class="home-medicamento-info">
+
+                <span class="home-medicamento-tipo">
+                    MEDICAMENTO GENÉRICO
+                </span>
+
+                <h3>Vitamina D3</h3>
+
+                <p>2.000UI • 60 cápsulas</p>
+
+                <small>a partir de</small>
+
+                <section class="home-medicamento-preco">
+
+                    <strong>R$ 18,90</strong>
+
+                    <aside>
+                        <del>R$ 29,90</del>
+                        <span>economize 37%</span>
+                    </aside>
+
+                </section>
+
+                <a href="/remedio/3" class="home-medicamento-comparar">
+                    Comparar preços
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                </a>
+
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+<!-- ================= CATEGORIAS ================= -->
+
+<section class="home-categorias">
+
+    <header class="home-categorias-header">
+
+        <span class="home-categorias-label">
+            ENCONTRE MAIS RÁPIDO
+        </span>
+
+        <h2>Explore por categoria</h2>
+
+    </header>
+
+    <section class="home-categorias-lista">
+
+        <a href="/categorias/dor-e-febre" class="home-categoria-card">
+
+            <section class="home-categoria-icone">
+                <ion-icon name="bandage-outline"></ion-icon>
+            </section>
+
+            <section class="home-categoria-info">
+                <strong>Dor e febre</strong>
+                <small>Alívio para sintomas comuns</small>
+            </section>
+
+            <ion-icon
+                class="home-categoria-seta"
+                name="chevron-forward-outline">
+            </ion-icon>
+
+        </a>
+
+
+        <a href="/categorias/vitaminas" class="home-categoria-card">
+
+            <section class="home-categoria-icone">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+            </section>
+
+            <section class="home-categoria-info">
+                <strong>Vitaminas</strong>
+                <small>Suplementos e bem-estar</small>
+            </section>
+
+            <ion-icon
+                class="home-categoria-seta"
+                name="chevron-forward-outline">
+            </ion-icon>
+
+        </a>
+
+
+        <a href="/categorias/alergias" class="home-categoria-card">
+
+            <section class="home-categoria-icone">
+                <ion-icon name="checkmark-outline"></ion-icon>
+            </section>
+
+            <section class="home-categoria-info">
+                <strong>Alergias</strong>
+                <small>Cuidados respiratórios</small>
+            </section>
+
+            <ion-icon
+                class="home-categoria-seta"
+                name="chevron-forward-outline">
+            </ion-icon>
+
+        </a>
+
+
+        <a href="/categorias/coracao" class="home-categoria-card">
+
+            <section class="home-categoria-icone">
+                <ion-icon name="heart-outline"></ion-icon>
+            </section>
+
+            <section class="home-categoria-info">
+                <strong>Coração</strong>
+                <small>Saúde cardiovascular</small>
+            </section>
+
+            <ion-icon
+                class="home-categoria-seta"
+                name="chevron-forward-outline">
+            </ion-icon>
+
+        </a>
+
+    </section>
+
+</section>
+
+
+<!-- ================= COMO FUNCIONA ================= -->
+
+<section class="home-como-funciona" id="como-funciona">
+
+    <section class="home-como-texto">
+
+        <span class="home-como-label">
+            SUA SAÚDE, SUAS ESCOLHAS
+        </span>
+
+        <h2>
+            Economizar também é<br>
+            uma forma de cuidado.
+        </h2>
+
+        <p>
+            O BioClicky transforma dados de preços em decisões
+            simples, seguras e transparentes.
+        </p>
+
+        <a href="#como-funciona" class="home-como-botao">
+            Entenda como funciona
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </a>
+
+    </section>
+
+
+    <section class="home-como-lista">
+
+        <article class="home-como-item">
+
+            <span class="home-como-numero">01</span>
+
+            <section>
+                <h3>Compare sem complicação</h3>
+
+                <p>
+                    Veja preços de diferentes farmácias em uma única tela.
+                </p>
+            </section>
+
+        </article>
+
+
+        <article class="home-como-item">
+
+            <span class="home-como-numero">02</span>
+
+            <section>
+                <h3>Encontre perto de você</h3>
+
+                <p>
+                    Use sua localização para descobrir as opções mais convenientes.
+                </p>
+            </section>
+
+        </article>
+
+
+        <article class="home-como-item">
+
+            <span class="home-como-numero">03</span>
+
+            <section>
+                <h3>Decida com confiança</h3>
+
+                <p>
+                    Informações claras, atualizadas e sem ofertas escondidas.
+                </p>
+            </section>
+
+        </article>
+
+    </section>
+
+</section>
+
+<!-- ================= CTA ================= -->
+
+<section class="home-cta">
+
+    <section class="home-cta-conteudo">
+
+        <span class="home-cta-label">
+            <i></i>
+            COMECE AGORA
+        </span>
+
+        <h2>Seu medicamento pode custar menos.</h2>
+
+        <p>
+            Pesquise, compare e encontre a melhor opção perto de você.
+        </p>
+
+    </section>
+
+    <a href="/remedios" class="home-cta-botao">
+        Comparar preços
+        <ion-icon name="arrow-forward-outline"></ion-icon>
+    </a>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="home-footer">
+
+    <section class="home-footer-conteudo">
+
+        <section class="home-footer-marca">
+
+            <a href="/" class="home-footer-logo">
+
+                <span class="home-footer-logo-icone">
+                    <ion-icon name="add-outline"></ion-icon>
+                </span>
+
+                <strong>BioClicky</strong>
+
+            </a>
+
+            <p>
+                Compare preços de medicamentos com clareza, confiança
+                e praticidade.
+            </p>
+
+        </section>
+
+
+        <nav class="home-footer-coluna">
+
+            <h3>BioClicky</h3>
+
+            <a href="#como-funciona">Como funciona</a>
+            <a href="/farmacias">Farmácias</a>
+            <a href="/categorias">Categorias</a>
+
+        </nav>
+
+
+        <nav class="home-footer-coluna">
+
+            <h3>Suporte</h3>
+
+            <a href="#">Central de ajuda</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Termos de uso</a>
+            <a href="/admin">Área administrativa</a>
+
+        </nav>
+
+
+        <section class="home-footer-coluna home-footer-importante">
+
+            <h3>Importante</h3>
+
+            <p>
+                Não vendemos medicamentos. Apenas comparamos preços
+                e indicamos onde encontrá-los.
+            </p>
+
+        </section>
+
+    </section>
+
+
+    <section class="home-footer-bottom">
+
+        <span>
+            © 2026 BioClicky. Todos os direitos reservados.
+        </span>
+
+        <span>
+            Feito no Brasil para cuidar melhor.
+        </span>  
+
+    </section>
+
+</footer>
+
+</body>
+
+</html>

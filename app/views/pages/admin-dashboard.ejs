@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Administrativo - BioClicky</title>
+
+    <link rel="stylesheet" href="/css/admin-dashboard.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="admin-dashboard-body">
+
+    <header class="admin-dashboard-header">
+
+        <a href="/admin/dashboard" class="admin-dashboard-logo">
+            <img
+                src="/imagens/logo-header/logo-e-titulo.png"
+                alt="BioClicky"
+            >
+        </a>
+
+        <nav class="admin-dashboard-nav">
+
+            <a href="/admin/dashboard" class="admin-dashboard-nav-active">
+                <ion-icon name="grid-outline"></ion-icon>
+                Dashboard
+            </a>
+
+            <a href="/admin/usuarios">
+                <ion-icon name="people-outline"></ion-icon>
+                Usuários
+            </a>
+
+            <a href="/admin/medicamentos">
+                <ion-icon name="medical-outline"></ion-icon>
+                Medicamentos
+            </a>
+
+            <a href="/admin/farmacias">
+                <ion-icon name="business-outline"></ion-icon>
+                Farmácias
+            </a>
+
+            <a href="/admin/categorias">
+                <ion-icon name="layers-outline"></ion-icon>
+                Categorias
+            </a>
+
+            <a href="/admin/relatorios">
+                <ion-icon name="bar-chart-outline"></ion-icon>
+                Relatórios
+            </a>
+
+            <a href="/admin/configuracoes">
+                <ion-icon name="settings-outline"></ion-icon>
+                Configurações
+            </a>
+
+        </nav>
+
+        <section class="admin-dashboard-user">
+
+            <section class="admin-dashboard-user-info">
+                <strong><%= admin %></strong>
+                <small>Administrador</small>
+            </section>
+
+            <form action="/admin/logout" method="POST">
+                <button type="submit" class="admin-dashboard-logout">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    Sair
+                </button>
+            </form>
+
+        </section>
+
+    </header>
+
+    <main class="admin-dashboard-main">
+
+        <header class="admin-dashboard-title">
+            <section>
+                <span>Painel Administrativo</span>
+                <h1>Olá, <%= admin %>!</h1>
+                <p>Gerencie as informações do BioClicky.</p>
+            </section>
+        </header>
+
+        <section class="admin-dashboard-cards">
+
+            <article class="admin-dashboard-card">
+                <section class="admin-dashboard-card-icon">
+                    <ion-icon name="people-outline"></ion-icon>
+                </section>
+
+                <section>
+                    <span>Usuários</span>
+                    <strong><%= estatisticas.usuarios %></strong>
+                </section>
+            </article>
+
+            <article class="admin-dashboard-card">
+                <section class="admin-dashboard-card-icon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </section>
+
+                <section>
+                    <span>Pesquisas</span>
+                    <strong><%= estatisticas.pesquisas %></strong>
+                </section>
+            </article>
+
+            <article class="admin-dashboard-card">
+                <section class="admin-dashboard-card-icon">
+                    <ion-icon name="medical-outline"></ion-icon>
+                </section>
+
+                <section>
+                    <span>Medicamentos</span>
+                    <strong><%= estatisticas.medicamentos %></strong>
+                </section>
+            </article>
+
+            <article class="admin-dashboard-card">
+                <section class="admin-dashboard-card-icon">
+                    <ion-icon name="business-outline"></ion-icon>
+                </section>
+
+                <section>
+                    <span>Farmácias</span>
+                    <strong><%= estatisticas.farmacias %></strong>
+                </section>
+            </article>
+
+        </section>
+
+        <section class="admin-dashboard-content">
+
+            <article class="admin-dashboard-welcome">
+
+                <section class="admin-dashboard-welcome-icon">
+                    <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </section>
+
+                <section>
+                    <h2>Área administrativa</h2>
+                    <p>
+                        Utilize o menu para gerenciar usuários,
+                        medicamentos, farmácias, categorias e relatórios.
+                    </p>
+                </section>
+
+            </article>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

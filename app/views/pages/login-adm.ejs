@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link
+        rel="stylesheet"
+        href="/css/login-adm.css"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+        nomodule
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Acesso Administrativo - BioClicky</title>
+
+</head>
+
+
+<body class="login-adm-body">
+
+
+    <main class="login-adm-main">
+
+
+        <!-- =========================================
+             LADO ESQUERDO
+        ========================================== -->
+
+        <section class="login-adm-brand">
+
+            <a
+                href="/"
+                class="login-adm-logo"
+            >
+
+                <img
+                    src="/imagens/logo-header/logo-e-titulo.png"
+                    alt="BioClicky"
+                >
+
+            </a>
+
+
+            <section class="login-adm-brand-content">
+
+                <p class="login-adm-brand-label">
+
+                    <span></span>
+
+                    GESTÃO BIOCLICKY
+
+                </p>
+
+
+                <h1 class="login-adm-brand-title">
+
+                    Dados confiáveis para<br>
+                    decisões melhores.
+
+                </h1>
+
+
+                <p class="login-adm-brand-description">
+
+                    Gerencie produtos, acompanhe parceiros e analise
+                    o desempenho da plataforma em um ambiente seguro.
+
+                </p>
+
+            </section>
+
+
+            <aside class="login-adm-security">
+
+                <span class="login-adm-security-icon">
+
+                    <ion-icon
+                        name="shield-check-outline"
+                    ></ion-icon>
+
+                </span>
+
+
+                <section>
+
+                    <strong>
+                        Ambiente protegido
+                    </strong>
+
+                    <small>
+                        Acesso monitorado e exclusivo para administradores autorizados.
+                    </small>
+
+                </section>
+
+            </aside>
+
+
+            <span class="login-adm-decoration login-adm-decoration-one"></span>
+
+            <span class="login-adm-decoration login-adm-decoration-two"></span>
+
+        </section>
+
+
+        <!-- =========================================
+             LADO DIREITO
+        ========================================== -->
+
+        <section class="login-adm-content">
+
+
+            <!-- =========================================
+                 TEMA
+            ========================================== -->
+
+            <section class="login-adm-theme">
+
+                <button
+                    type="button"
+                    class="login-adm-theme-light"
+                >
+
+                    <ion-icon name="sunny-outline"></ion-icon>
+
+                    <span>
+                        Claro
+                    </span>
+
+                </button>
+
+
+                <button
+                    type="button"
+                    class="login-adm-theme-dark"
+                >
+
+                    <ion-icon name="moon-outline"></ion-icon>
+
+                    <span>
+                        Escuro
+                    </span>
+
+                </button>
+
+            </section>
+
+
+            <a
+                href="/"
+                class="login-adm-back"
+            >
+
+                <ion-icon name="arrow-back-outline"></ion-icon>
+
+                Voltar ao site
+
+            </a>
+
+
+            <section class="login-adm-form-container">
+
+
+                <header class="login-adm-form-header">
+
+                    <span class="login-adm-form-icon">
+
+                        <ion-icon
+                            name="shield-check-outline"
+                        ></ion-icon>
+
+                    </span>
+
+
+                    <section>
+
+                        <p class="login-adm-form-label">
+
+                            ACESSO RESTRITO
+
+                        </p>
+
+                        <h2>
+
+                            Entrar no painel administrativo
+
+                        </h2>
+
+                        <p class="login-adm-form-description">
+
+                            Use suas credenciais de administrador para continuar.
+
+                        </p>
+
+                    </section>
+
+                </header>
+
+
+                <form
+                    action="/admin/login"
+                    method="POST"
+                    class="login-adm-form"
+                >
+
+
+                    <label
+                        for="email"
+                        class="login-adm-label"
+                    >
+
+                        E-mail administrativo
+
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="login-adm-input"
+                        placeholder="admin@bioclicky.com.br"
+                        autocomplete="username"
+                        required
+                    >
+
+
+                    <label
+                        for="senha"
+                        class="login-adm-label"
+                    >
+
+                        Senha
+
+                    </label>
+
+
+                    <section class="login-adm-password">
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            class="login-adm-input"
+                            placeholder="Digite sua senha"
+                            autocomplete="current-password"
+                            required
+                        >
+
+
+                        <button
+                            type="button"
+                            class="login-adm-password-button"
+                            aria-label="Mostrar senha"
+                        >
+
+                            <ion-icon
+                                name="eye-outline"
+                            ></ion-icon>
+
+                        </button>
+
+                    </section>
+
+
+                    <section class="login-adm-options">
+
+                        <label class="login-adm-remember">
+
+                            <input
+                                type="checkbox"
+                                name="lembrar"
+                            >
+
+                            <span>
+                                Manter conectado neste dispositivo
+                            </span>
+
+                        </label>
+
+
+                        <a href="#" class="login-adm-recovery">
+
+                            Recuperar acesso
+
+                        </a>
+
+                    </section>
+
+
+                    <% if (typeof erro !== "undefined" && erro) { %>
+
+                        <p class="login-adm-error">
+                            <ion-icon name="alert-circle-outline"></ion-icon>
+                            <%= erro %>
+                        </p>
+
+                    <% } %>
+
+
+                    <button
+                        type="submit"
+                        class="login-adm-submit"
+                    >
+
+                        <span>
+                            Entrar no painel
+                        </span>
+
+                        <ion-icon
+                            name="arrow-forward-outline"
+                        ></ion-icon>
+
+                    </button>
+
+                </form>
+
+
+                <!-- =========================================
+                     ACESSO DE DEMONSTRAÇÃO
+                ========================================== -->
+
+                <aside class="login-adm-demo">
+
+                    <section>
+
+                        <strong>
+                            Acesso de demonstração
+                        </strong>
+
+                        <p>
+                            E-mail: admin@bioclicky.com.br
+                        </p>
+
+                        <p>
+                            Senha: Admin123
+                        </p>
+
+                    </section>
+
+
+                    <button
+                        type="button"
+                        class="login-adm-fill"
+                    >
+
+                        Preencher credenciais
+
+                    </button>
+
+                </aside>
+
+
+                <p class="login-adm-help">
+
+                    Problemas para acessar? Entre em contato com o responsável
+                    técnico da plataforma.
+
+                </p>
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         ACESSIBILIDADE
+    ========================================== -->
+
+    <aside class="login-adm-accessibility">
+
+        <button type="button">
+
+            <ion-icon
+                name="accessibility-outline"
+            ></ion-icon>
+
+            <span>
+                Acessibilidade
+            </span>
+
+        </button>
+
+    </aside>
+
+
+    <script src="/js/login-adm.js"></script>
+
+</body>
+
+</html>

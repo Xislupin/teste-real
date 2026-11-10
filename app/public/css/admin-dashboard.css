@@ -1,0 +1,285 @@
+/* ================= ADMIN DASHBOARD ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin-dashboard-body {
+    min-height: 100vh;
+    background: #f5f8f7;
+    color: #17221d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-dashboard-header {
+    min-height: 80px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3ebe7;
+}
+
+.admin-dashboard-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.admin-dashboard-logo img {
+    width: 155px;
+    height: auto;
+}
+
+.admin-dashboard-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.admin-dashboard-nav a {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px 12px;
+    border-radius: 9px;
+    color: #5d6963;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.admin-dashboard-nav a:hover,
+.admin-dashboard-nav-active {
+    background: #eaf8f0;
+    color: #1ca85c !important;
+}
+
+.admin-dashboard-nav ion-icon {
+    font-size: 18px;
+}
+
+.admin-dashboard-user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.admin-dashboard-user-info {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.admin-dashboard-user-info strong {
+    font-size: 14px;
+}
+
+.admin-dashboard-user-info small {
+    margin-top: 3px;
+    color: #7b8781;
+}
+
+.admin-dashboard-logout {
+    border: 0;
+    background: transparent;
+    color: #d95353;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.admin-dashboard-main {
+    width: min(1400px, 92%);
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+.admin-dashboard-title {
+    margin-bottom: 30px;
+}
+
+.admin-dashboard-title span {
+    color: #1ca85c;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.admin-dashboard-title h1 {
+    margin-top: 7px;
+    font-size: 32px;
+}
+
+.admin-dashboard-title p {
+    margin-top: 8px;
+    color: #718078;
+}
+
+.admin-dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.admin-dashboard-card {
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e3ebe7;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+}
+
+.admin-dashboard-card-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf8f0;
+    color: #1ca85c;
+}
+
+.admin-dashboard-card-icon ion-icon {
+    font-size: 25px;
+}
+
+.admin-dashboard-card section:last-child {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-dashboard-card span {
+    color: #7b8781;
+    font-size: 13px;
+}
+
+.admin-dashboard-card strong {
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+.admin-dashboard-content {
+    margin-top: 25px;
+}
+
+.admin-dashboard-welcome {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff;
+    border: 1px solid #e3ebe7;
+    border-radius: 15px;
+}
+
+.admin-dashboard-welcome-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf8f0;
+    color: #1ca85c;
+}
+
+.admin-dashboard-welcome-icon ion-icon {
+    font-size: 27px;
+}
+
+.admin-dashboard-welcome h2 {
+    font-size: 20px;
+}
+
+.admin-dashboard-welcome p {
+    margin-top: 7px;
+    color: #718078;
+    line-height: 1.5;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1100px) {
+
+    .admin-dashboard-header {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    .admin-dashboard-nav {
+        gap: 2px;
+    }
+
+    .admin-dashboard-nav a {
+        padding: 9px;
+    }
+
+    .admin-dashboard-nav a {
+        font-size: 0;
+    }
+
+    .admin-dashboard-nav ion-icon {
+        font-size: 20px;
+    }
+
+    .admin-dashboard-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .admin-dashboard-header {
+        min-height: auto;
+        padding: 18px;
+        flex-wrap: wrap;
+    }
+
+    .admin-dashboard-logo {
+        width: 100%;
+    }
+
+    .admin-dashboard-nav {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .admin-dashboard-user {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .admin-dashboard-user-info {
+        text-align: left;
+    }
+
+    .admin-dashboard-main {
+        width: 94%;
+        padding: 30px 0;
+    }
+
+    .admin-dashboard-title h1 {
+        font-size: 26px;
+    }
+
+    .admin-dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-dashboard-welcome {
+        align-items: flex-start;
+    }
+
+}
